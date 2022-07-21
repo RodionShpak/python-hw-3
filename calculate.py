@@ -17,7 +17,7 @@ right_operand = sys.argv[3]
 
 operation = sys.argv[2]
 
-allowed_operations = ['+', '-', '/', '*']
+allowed_operations = ['+', '-', '/', '*', '%']
 
 if operation not in allowed_operations:
     print('Operation is not allowed')
