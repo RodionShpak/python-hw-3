@@ -8,13 +8,15 @@
 # - `double_zero([1,0,2,3,0,4,5,0])` -> [1,0,0,2,3,0,0,4,5,0,0]
 # - `double_zero([1,2,3])` -> [1,2,3]
 
+# array = [1,2,3]
 array = [1,0,2,3,0,4,5,0]
+# array = [1,0,2,3,0,4,5,0,0,0]
 def double_zero(array):
 	count = 0
 	arrayNew = array.copy()
 	for i in range(len(array)):
 			if int(array[i]) == 0:
-				arrayNew.insert(i + count, 0)
+				arrayNew.insert(i + count, 0)   # через метод інсерт, де перше це індекс, а друге значення - елемент який потрібно вставити 
 				count += 1
 	print (arrayNew)
 double_zero(array)
